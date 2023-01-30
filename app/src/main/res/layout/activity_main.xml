@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="227dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="76dp"
+        android:background="@drawable/tv"
+        android:padding="70dp"
+        android:text="0"
+        android:textSize="55sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_minus"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:backgroundTint="#244AAA"
+        android:layout_marginStart="220dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="370dp"
+        android:gravity="center"
+        android:text="-"
+        app:cornerRadius="10dp"
+        android:textSize="32sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_plus"
+        android:backgroundTint="#244AAA "
+        android:layout_width="100dp"
+        app:cornerRadius="10dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginStart="60dp"
+        android:text="+"
+        android:textSize="32sp" />
+
+</FrameLayout>
