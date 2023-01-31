@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import com.example.m5_hw4.databinding.ActivityMainBinding
-import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,19 +21,11 @@ class MainActivity : AppCompatActivity() {
     }
     private fun listeners() {
         binding.btnPlus.setOnClickListener {
-            if (viewModel.variable==10){
-                Snackbar.make(binding.root,"Вы достигли цели!",Snackbar.LENGTH_LONG).show()
-            } else{
-                viewModel.plus()
-            }
+                viewModel.plus(it)
         }
 
         binding.btnMinus.setOnClickListener {
-          if (viewModel.variable==0){
-              Snackbar.make(binding.root,"Вы достигли цели!",Snackbar.LENGTH_LONG).show()
-          } else{
-            viewModel.minus()
-          }
+            viewModel.minus(it)
         }
     }
 
